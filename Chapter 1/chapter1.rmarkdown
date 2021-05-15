@@ -1,0 +1,47 @@
+---
+title: "Chapter 1"
+subtitle: "Data Visualization with ggplot2"
+output: 
+  html_document:
+    df_print: paged
+---
+
+First Steps
+
+```{r, include=FALSE}
+library("tidyverse")
+```
+
+```{r}
+mpg
+```
+
+**A Graphing Template**
+
+Exercises
+
+1)  Run ggplot `(data = mpg)`. What do you see?
+
+```{r}
+ggplot(data = mpg)
+```
+
+-   R: As we can see, nothing is displayed.
+
+2)  How many rows are in `mtcars`? How many columns?
+
+```{r}
+mtcars
+```
+
+-   R: There are 32 rows and 11 columns.
+
+3)  What does the `drv` variable describe? Read the help for `?mpg` to find out.
+
+```{r, include=FALSE}
+?mpg
+```
+
+    Fuel economy data from 1999 to 2008 for 38 popular models of cars
+
+    This dataset contains a subset of the fuel economy data that the EPA makes available on <https://fueleconomy.gov/>. It contains only models which had a new release every year between 1999 and 2008 - this was used as a proxy for the popularity of the car.
